@@ -13,6 +13,6 @@ try:
 except mysql.connector.Error as err:
     print(f"failed to conect to DB : {err}")
 
-cursor.close()
+cursor.close() # the order of closing this is important
 mydb.close()
 
